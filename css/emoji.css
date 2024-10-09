@@ -1,0 +1,41 @@
+.emoji-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.emoji-option {
+  position: relative;
+  cursor: pointer;
+}
+
+.emoji {
+  width: 60px;
+  height: 90px;
+  font-size: 50px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0070f3;
+  border: 2px solid transparent;
+}
+
+.emoji-option:hover .emoji {
+  transform: scale(1.1);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label .emoji {
+  background-color: transparent;
+  color: #0070f3;
+  transform: scale(1.5);
+}
